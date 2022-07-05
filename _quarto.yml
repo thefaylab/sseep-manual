@@ -1,0 +1,28 @@
+project:
+  type: book
+
+book:
+  title: "sseep-manual"
+  author: "Gavin Fay"
+  date: "7/5/2022"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - repos.qmd
+    - file-organization.qmd
+    - references.qmd
+
+sidebar:
+    logo: "images/sseep-3-noback.png"
+    pinned: true
+    
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+

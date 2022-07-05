@@ -1,0 +1,6 @@
+# SSEEP manual {.unnumbered}
+
+This is the project manual for the [SSEEP](thefaylab.github.io/sseep) project.
+
+Rationale: documenting workflow, etc. for project team members.
+

@@ -1,0 +1,15 @@
+# SSEEP GitHub repositories
+
+There are several repositories for SSEEP-related work. (add more as they come).
+
+All should be associated with the SSEEP GitHub Team.
+
+Preferred naming, use `sseep-[name]`
+
+-   [sseep](github.com/thefaylab/sseep) (main github repo, where the website is served from)
+
+-   [sseep-manual](github.com/thefaylab/sseep-manual) (this repo)
+
+-   [SimSurvey](github.com/thefaylab/SimSurvey) (fork of {SimSurvey})
+
+-   

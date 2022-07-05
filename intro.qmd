@@ -1,0 +1,29 @@
+# Introduction: How we work
+
+There are several shared resources for SSEEP.
+
+-   [SSEEP website](thefaylab.github.io/sseep) (public facing, project information)
+
+-   [SSEEP GItHub](github.com/thefaylab/sseep) (main github repo, where the website is served from)
+
+-   SSEEP GitHub Team (project team members, project boards, collection of SSEEP-related repositories)
+
+-   SSEEP GitHub Project Boards
+
+-   SSEEP Google Drive (shared folder(s), meeting notes, workshop materials, presentations)
+
+-   SSEEP manual (this book, largely for project team members, containing workflows, documentation, etc.)
+
+-   SSEEP folder on Fay lab storage server at SMAST (for data not on GitHub and for backups)
+
+-   SSEEP Gantt Chart documenting major deliverables, timeline, etc. (to come)
+
+## Communication
+
+(how to communicate with project team members, and for what)
+
+-   GitHub issues: repo-specific, preferred method of communication in-team regarding project cards, tasks, etc.
+
+-   GitHub Team issues: As for repo-specific issues, but items related to overall project management
+
+-   Email: preferred method of communication with larger team and with steering committee.

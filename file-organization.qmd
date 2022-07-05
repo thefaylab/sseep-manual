@@ -1,0 +1,33 @@
+# File organization
+
+Recommended organization for files across SSEEP repositories.
+
+(borrowing heavily from [Wilson et al. 2017 "Good enough practices in scientific computing"](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510&ref=https://githubhelp.com#sec009))
+
+Use Projects (.Rproj). Keep all project files in their respective directories.
+
+Do not duplicate data across repositories. If something is to be re-used across projects, consider adding to the main sseep folder. (perhaps consider a separate `sseep-data` repo?)
+
+Be mindful of what is part of the github repository and what files are unique to your local machine. Use `.gitignore` files to prevent pushes of local files that do not need to be tracked.
+
+Suggested directory structure: (don't need to rigidly adhere to this, but borrow the principle
+
+\[repo-name\] - data (directory containing repo specific data files)
+
+\[repo-name\] - docs (directory containing text files related to the project)
+
+\[repo-name\] - R (directory containing R scripts)
+
+\[repo-name\] - results (directory containing output files)
+
+### Local file locations 
+
+Recommend having all projects in the same root folder, so that it is easy to navigate among them via relative file paths if want to access something in a different repo.
+
+e.g.
+
+`~/research/sseep/`\
+`~/research/sseep-data/~/research/sseep-manual/~/research/SimSurvey`
+
+then if say you are in `SimSurvey` and need to access something in `sseep-data`, might use something like:\
+`datafile <- "../sseep-data/data/wind-map.csv"`
