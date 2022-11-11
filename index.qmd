@@ -4,3 +4,4 @@ This is the project manual for the [SSEEP](thefaylab.github.io/sseep) project.
 
 Rationale: documenting workflow, etc. for project team members.
 
+Intent: document, document, document. even if a little scattered for now.  
