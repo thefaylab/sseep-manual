@@ -1,0 +1,23 @@
+# File naming
+
+## R scripts
+
+Recommended naming for R scripts across SSEEP repositories.  
+
+Many repos will have a `R` directory containing R scripts that perform analyses for the work in that repository.  
+It is helpful for viewers to be able to quickly understand how to interact with these.  
+
+File names should give an overview of the main purpose of the script.  
+Number scripts within folders according to the order of operations.  
+e.g.
+```
+01-clean-raw-data.R
+02-tidy-cleaned-data.R
+03-import-windarea-shapefile.R
+```
+
+At the start of each R script, write a section of comments that overviews the objectives of the particular code, what the dependencies are, and what the outcomes of running the code are (e.g. objects created, files written, etc.).  
+
+Consider creating documentation via a README or a wiki page that outlines the workflow for particular tasks.  
+
+Avoid performing too many steps within a specific script (give each script its own objective), to both aid future users of the code but also to facilitate modularity of workflow and script re-use.  
