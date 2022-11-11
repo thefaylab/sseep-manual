@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "sseep-manual",
+    "section": "",
+    "text": "This is the project manual for the SSEEP project.\nRationale: documenting workflow, etc. for project team members.\nIntent: document, document, document. even if a little scattered for now."
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction: How we work",
+    "section": "",
+    "text": "There are several shared resources for SSEEP."
+  },
+  {
+    "objectID": "intro.html#communication",
+    "href": "intro.html#communication",
+    "title": "1  Introduction: How we work",
+    "section": "1.1 Communication",
+    "text": "1.1 Communication\n(how to communicate with project team members, and for what)\n\nGitHub issues: repo-specific, preferred method of communication in-team regarding project cards, tasks, etc.\nGitHub Team issues: As for repo-specific issues, but items related to overall project management\nEmail: preferred method of communication with larger team and with steering committee."
+  },
+  {
+    "objectID": "repos.html",
+    "href": "repos.html",
+    "title": "2  SSEEP GitHub repositories",
+    "section": "",
+    "text": "All should be associated with the SSEEP GitHub Team.\nPreferred naming, use sseep-[name]\n\nsseep (main github repo, where the website is served from)\nsseep-manual (this repo)\nSimSurvey (fork of {SimSurvey})\nsseep-analysis (cleaning/tidying/prep of trawl survey data, statistical analyses of BTS data for SSEEP)"
+  },
+  {
+    "objectID": "file-organization.html",
+    "href": "file-organization.html",
+    "title": "3  File organization",
+    "section": "",
+    "text": "(borrowing heavily from Wilson et al. 2017 “Good enough practices in scientific computing”)\nUse Projects (.Rproj). Keep all project files in their respective directories.\nDo not duplicate data across repositories. If something is to be re-used across projects, consider adding to the main sseep folder. (perhaps consider a separate sseep-data repo?)\nBe mindful of what is part of the github repository and what files are unique to your local machine. Use .gitignore files to prevent pushes of local files that do not need to be tracked.\nSuggested directory structure: (don’t need to rigidly adhere to this, but borrow the principle\n[repo-name] - data (directory containing repo specific data files)\n[repo-name] - docs (directory containing text files related to the project)\n[repo-name] - R (directory containing R scripts)\n[repo-name] - results (directory containing output files)\n\n3.0.1 Local file locations\nRecommend having all projects in the same root folder, so that it is easy to navigate among them via relative file paths if want to access something in a different repo.\ne.g.\n~/research/sseep/\n~/research/sseep-data/~/research/sseep-manual/~/research/SimSurvey\nthen if say you are in SimSurvey and need to access something in sseep-data, might use something like:\ndatafile <- \"../sseep-data/data/wind-map.csv\""
+  },
+  {
+    "objectID": "file-naming.html",
+    "href": "file-naming.html",
+    "title": "4  File naming",
+    "section": "",
+    "text": "Recommended naming for R scripts across SSEEP repositories.\nMany repos will have a R directory containing R scripts that perform analyses for the work in that repository.\nIt is helpful for viewers to be able to quickly understand how to interact with these.\nFile names should give an overview of the main purpose of the script.\nNumber scripts within folders according to the order of operations.\ne.g.\n01-clean-raw-data.R\n02-tidy-cleaned-data.R\n03-import-windarea-shapefile.R\nAt the start of each R script, write a section of comments that overviews the objectives of the particular code, what the dependencies are, and what the outcomes of running the code are (e.g. objects created, files written, etc.).\nConsider creating documentation via a README or a wiki page that outlines the workflow for particular tasks.\nAvoid performing too many steps within a specific script (give each script its own objective), to both aid future users of the code but also to facilitate modularity of workflow and script re-use."
+  }
+]
