@@ -12,4 +12,6 @@ Preferred naming, use `sseep-[name]`
 
 -   [SimSurvey](github.com/thefaylab/SimSurvey) (fork of {SimSurvey})
 
--   
+-   [sseep-analysis](github.com/thefaylab/sseep-analysis) (cleaning/tidying/prep of trawl survey data, statistical analyses of BTS data for SSEEP)
+
+
