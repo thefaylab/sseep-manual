@@ -1,10 +1,21 @@
 project:
   type: book
+  output-dir: _book
 
 book:
   title: "sseep-manual"
   author: "Gavin Fay"
   date: "7/5/2022"
+  
+  page-footer:
+    left: |
+      <a href="http://www.smast.umassd.edu/lab_fay/">The Fay lab</a>
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
+  site-url: https://thefaylab.github.io/sseep-manual/
+  repo-url: https://github.com/thefaylab/sseep-manual
+  repo-actions: [edit,issue]
+  
   chapters:
     - index.qmd
     - intro.qmd
@@ -22,8 +33,5 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
-  pdf:
-    documentclass: scrreprt
 
 editor: visual
-
